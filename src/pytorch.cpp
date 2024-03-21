@@ -210,7 +210,7 @@ torch_compute_lookup_table(torch::Tensor x, torch::Tensor weights, const float s
                          y_var.data_ptr<float>(), log_factorial.data_ptr<float>(), border_w.data_ptr<float>(),
                          x.size(0), weights.size(0), signal, bins, scale, device);
 
-    return make_pair(y_mean, y_var);
+    return std::make_pair(y_mean, y_var);
 }
 
 

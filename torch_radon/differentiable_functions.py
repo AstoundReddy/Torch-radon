@@ -1,7 +1,7 @@
 try:
     import torch_radon_cuda
 except Exception as e:
-    print("Importing exception")
+    print("Importing exception",e)
 
 from torch.autograd import Function
 

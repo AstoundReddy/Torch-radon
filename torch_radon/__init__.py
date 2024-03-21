@@ -9,7 +9,7 @@ try:
     import torch_radon_cuda
     from torch_radon_cuda import RaysCfg
 except Exception as e:
-    print("Importing exception")
+    print("Importing exception",e)
 
 from .differentiable_functions import RadonForward, RadonBackprojection
 from .utils import normalize_shape
